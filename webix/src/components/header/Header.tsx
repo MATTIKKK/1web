@@ -1,5 +1,8 @@
 import './header.css';
 import logo from '../../static/images/webix-logo.png';
+import telegram from '../../static/images/telegram-logo.png';
+import instagram from '../../static/images/instagram-logo.png';
+import whatsapp from '../../static/images/whatsapp-logo.png';
 import { useState } from 'react';
 
 const Header = () => {
@@ -76,7 +79,19 @@ const Header = () => {
             <li>
               <a href="#">Путешествия</a>
             </li>
+
+            <div className="menu-more-info">
+            <p>webix.office@gmail.com</p>
+            <p>7 (725) 384-9106</p>
+            <div className="social-media-img">
+              <img src={telegram} alt="telegram" />
+              <img src={instagram} alt="instagram" />
+              <img src={whatsapp} alt="whatsapp" />
+            </div>
+          </div>
           </ul>
+
+          
         </nav>
       </div>
     </div>
