@@ -2,7 +2,6 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +57,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+  }
   .footer-main.desktop {
     display: none;
   }

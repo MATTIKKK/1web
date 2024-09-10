@@ -1,0 +1,91 @@
+.client-form {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    gap: 50px;
+    height: auto;
+    align-self: stretch;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.client-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.client-form-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial;
+}
+
+.client-form form input, .client-form textarea {
+    background-color: rgb(246, 246, 246);
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.client-form form > input, .client-form textarea{
+    width: 100%;
+}
+
+.client-form form textarea {
+    height: 100px;
+    resize: none;
+}
+.client-form-checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.client-form-checkbox label {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: rgb(125, 125, 125);
+}
+
+.client-form form button {
+    border: none;
+    box-shadow: 1px 1px 10px rgba(216, 216, 216, 0.4);
+    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    background-color: transparent;
+}
+
+.client-form-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-form-block img {
+    width: 250px;
+}
+
+.client-form .first-image {
+    align-items: start;
+
+}
+
+.client-form .second-image {
+    align-items: end;
+
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .client-form-block.desktop {
+        display: none;
+    }
+
+    .client-form-block {
+        max-width: 90%;
+    }
+}
