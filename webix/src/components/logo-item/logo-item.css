@@ -1,0 +1,39 @@
+.logo-item {
+    background-color: rgb(245, 245, 245);
+    width: 300px;
+    font-family: "Inter", sans-serif;
+}
+
+.logo-item img {
+    width: 100%;
+}
+
+.logo-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.logo-item-category {
+    font-size: 12px;
+}
+
+.logo-item-name {
+    font-size: 15px;
+}
+
+.logo-item-price {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.logo-item button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(197, 197, 197, 0.4);
+}
