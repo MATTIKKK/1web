@@ -1,0 +1,13 @@
+.about-us-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-text p {
+    font-size: 29px;
+    width: 75%;
+    font-weight: 500;
+    margin: 50px 0 30px 0;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial;
+}

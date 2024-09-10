@@ -40,7 +40,7 @@ const Header = () => {
           </ul>
 
           <div className="menu-about-us">
-            <a href="#">О нас</a>
+            <a href="about-us">О нас</a>
             <p className="menu-phone-number">+7 (727) 345-6789</p>
           </div>
         </nav>
