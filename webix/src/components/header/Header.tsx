@@ -1,5 +1,5 @@
 import './header.css';
-import logo from '../../static/images/webix-logo.png';
+import logo from '../../static/images/novanest-logo.png';
 import telegram from '../../static/images/telegram-logo.png';
 import instagram from '../../static/images/instagram-logo.png';
 import whatsapp from '../../static/images/whatsapp-logo.png';
@@ -13,35 +13,35 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="container">
         <nav className="menu-nav desktop">
           <img src={logo} alt="logo" className="logo" />
 
           <ul className="menu-list">
             <li>
-              <a href="#">Финансы</a>
+              <a href="#">Корпоративный</a>
             </li>
             <li>
-              <a href="#">Утилиты</a>
+              <a href="#">Технологии</a>
             </li>
             <li>
-              <a href="#">Здоровье</a>
+              <a href="#">Мода</a>
             </li>
             <li>
-              <a href="#">Игры</a>
+              <a href="#">Еда</a>
             </li>
             <li>
-              <a href="#">Социальные сети</a>
+              <a href="#">Спорт</a>
             </li>
             <li>
-              <a href="#">Путешествия</a>
+              <a href="#">Креатив</a>
             </li>
           </ul>
 
           <div className="menu-about-us">
             <a href="#">О нас</a>
-            <div className="menu-phone-number">7 (701) 234 56 78</div>
+            <p className="menu-phone-number">+7 (727) 345-6789</p>
           </div>
         </nav>
 
@@ -55,7 +55,10 @@ const Header = () => {
             <div className="menu-burger-line menu-burger-line-3"></div>
           </div>
 
+          <div className="menu-nav-info">
           <img src={logo} alt="logo" className="logo-mobile" />
+          <p className='menu-phone-number'>+7 (727) 345-6789</p>
+          </div>
           
           <ul
             id="menu-list"
@@ -81,8 +84,6 @@ const Header = () => {
             </li>
 
             <div className="menu-more-info">
-            <p>webix.office@gmail.com</p>
-            <p>7 (725) 384-9106</p>
             <div className="social-media-img">
               <img src={telegram} alt="telegram" />
               <img src={instagram} alt="instagram" />
@@ -94,7 +95,7 @@ const Header = () => {
           
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
