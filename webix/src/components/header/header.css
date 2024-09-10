@@ -155,13 +155,13 @@
   }
 
   .menu-burger.active .menu-burger-line-1 {
-    transform: rotate(40deg);
+    transform: rotate(45deg);
   }
   .menu-burger.active .menu-burger-line-2 {
     opacity: 0;
   }
   .menu-burger.active .menu-burger-line-3 {
-    transform: rotate(-40deg);
+    transform: rotate(-45deg);
   }
 
   .menu-more-info {

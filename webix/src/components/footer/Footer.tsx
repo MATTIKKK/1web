@@ -63,9 +63,6 @@ const Footer = () => {
 
             </div>
 
-            <div className="footer-block">
-              
-            </div>
           </div>
         </div>
       </div>

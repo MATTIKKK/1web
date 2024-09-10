@@ -2,12 +2,13 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  min-height: 150px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   overflow: hidden;
+  padding: 30px 0;
 }
 
 .footer-main.desktop {
@@ -66,5 +67,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+
+  .footer-block p, .footer-block div{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .second-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-block {
+    gap: 10px;
+  }
+
+  .footer_social-media-img {
+    margin: 10px;
+  }
+
+  .footer-block.first-block img {
+    margin-bottom: 30px;
   }
 }
