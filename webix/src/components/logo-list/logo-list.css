@@ -1,20 +1,88 @@
 .logo-list-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  overflow: hidden;
 }
 
 .logo-list-title {
-    font-family: "Inter", sans-serif;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 90%;
 }
 
 .logo-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-list-swiper {
+  margin-left: initial !important;
+  margin-right: initial !important;
+  position: relative; 
+}
+
+.logo-list-swiper .swiper-wrapper {
+    padding-bottom: 70px;
+}
+
+.logo-list-swiper .swiper-slide {
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-list-swiper .swiper-button-next::after,
+.logo-list-swiper .swiper-button-prev::after {
+  content: '';
+}
+
+.logo-list-swiper .swiper-button-prev::before {
+  content: '<';
+}
+
+.logo-list-swiper .swiper-button-next::before {
+  content: '>';
+}
+
+
+.logo-list-swiper .swiper-button-prev,
+.logo-list-swiper .swiper-button-next {
+  position: absolute;
+  top: initial;
+  bottom: 0;
+  color: white;
+}
+
+.logo-list-swiper .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.logo-list-swiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-list-swiper .swiper-wrapper {
+        padding-bottom: 50px;
+    }
+    .logo-list-swiper .swiper-button-next {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .logo-list-swiper .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+      }
 }
