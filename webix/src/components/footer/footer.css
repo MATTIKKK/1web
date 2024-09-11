@@ -56,6 +56,10 @@
   width: 30px;
 }
 
+.footer-block a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .footer-main.desktop {
     display: none;
@@ -69,7 +73,7 @@
 
   }
 
-  .footer-block p, .footer-block div{
+  .footer-block p, .footer-block a, .footer-block div{
     text-align: center;
     justify-content: center;
   }

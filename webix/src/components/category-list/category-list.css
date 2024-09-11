@@ -1,0 +1,46 @@
+.category-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+}
+
+.category-items {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    width: 70%;
+}
+
+.category-items div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.category-first-item, .category-third-item {
+    flex: 1;
+}
+
+.category-second-item {
+    flex: 2;
+}
+
+.category-items div img {
+    width: 100%;
+}
+
+.category-items div button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(197, 197, 197, 0.4);
+}

@@ -20,11 +20,27 @@ const Footer = () => {
                 +7 (727) 345-6789
               </p>
               <p className="footer-small-text">Политика конфиденциальности</p>
+              <a
+                className="footer-small-text"
+                href="https://novanest.webshop2.kz/api/products/documents/payment-terms.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Условие оплаты
+              </a>
             </div>
 
             <div className="footer-block">
               <p className="footer-text .footer-mail">shopin.shop@mail.com</p>
               <p className="footer-small-text">Публичная Оферта</p>
+              <a
+                className="footer-small-text"
+                href="https://novanest.webshop2.kz/api/products/documents/return-policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Политика возврата
+              </a>
             </div>
 
             <div className="footer-block">
@@ -60,7 +76,22 @@ const Footer = () => {
               <p className="footer-small-text">Copyright © 2024 SHOPIN</p>
               <p className="footer-small-text">Политика конфиденциальности</p>
               <p className="footer-small-text">Публичная Оферта</p>
-
+              <a
+                className="footer-small-text"
+                href="https://novanest.webshop2.kz/api/products/documents/return-policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Политика возврата
+              </a>
+              <a
+                className="footer-small-text"
+                href="https://novanest.webshop2.kz/api/products/documents/payment-terms.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Условие оплаты
+              </a>
             </div>
 
           </div>

@@ -9,6 +9,9 @@ import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../state/store';
+import { ProductType } from '../../state/product-reducer';
 
 export type LogoType = {
   img: string;
@@ -17,34 +20,11 @@ export type LogoType = {
   price: string;
 };
 
-const logoList: LogoType[] = [
-  {
-    img: logo1,
-    name: 'CreativePulse',
-    category: 'Мода',
-    price: '80 000 ₸',
-  },
-  {
-    img: logo2,
-    name: 'CreativePulse',
-    category: 'Мода',
-    price: '80 000 ₸',
-  },
-  {
-    img: logo3,
-    name: 'CreativePulse',
-    category: 'Мода',
-    price: '80 000 ₸',
-  },
-  {
-    img: logo4,
-    name: 'CreativePulse',
-    category: 'Мода',
-    price: '80 000 ₸',
-  },
-];
-
 const LogoList = () => {
+  const products = useSelector<RootState, ProductType[]>(
+    (state) => state.products
+  );
+
   return (
     <div className="logo-list-container">
       <p className="logo-list-title">
@@ -78,8 +58,8 @@ const LogoList = () => {
               },
             }}
           >
-            {logoList.map((logo) => (
-              <SwiperSlide key={logo.name}>
+            {products.map((logo) => (
+              <SwiperSlide key={logo.product_id}>
                 <LogoItem logoItem={logo} />
               </SwiperSlide>
             ))}

@@ -1,3 +1,4 @@
+import CategoryList from "../../components/category-list/CategoryList"
 import ClientForm from "../../components/client-form/ClientForm"
 import Footer from "../../components/footer/Footer"
 import Header from "../../components/header/Header"
@@ -8,6 +9,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
+      <CategoryList />
       <LogoList />
       <ClientForm />
       <Footer />
