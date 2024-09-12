@@ -20,7 +20,7 @@ const ProductCard = () => {
     <div className="product-card">
       <div className="container">
         <div className="product-card-container">
-          <div className="product-card-img-list">
+          <div className="product-card-img-list desktop">
             <img
               src={`https://novanest.webshop2.kz/api/products/previewImage/${product.photo_preview_one}`}
               alt=""
@@ -48,7 +48,7 @@ const ProductCard = () => {
                   <p>{product.category}</p>
                 </div>
 
-                <p className='product-card-price'>{product.price} KZT</p>
+                <p className='product-card-price'>{product.price}KZT</p>
               </div>
 
               <p>{product.description}</p>
