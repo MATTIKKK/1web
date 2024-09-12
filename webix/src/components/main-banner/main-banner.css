@@ -14,7 +14,7 @@
 }
 
 .main-banner-list img {
-  width: 400px;
+  max-width: 400px;
   object-fit: cover;
   height: 400px;
   height: auto;
@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  max-width: 600px;
 }
 
 .main-banner-title {
@@ -40,4 +41,10 @@
   padding: 15px 25px;
   background-color: rgb(255, 88, 88);
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-banner-list {
+    flex-direction: column-reverse;
+  }
 }
