@@ -1,0 +1,55 @@
+.product-card {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.product-card-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100px;
+}
+
+.product-card-main {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Inter";
+}
+
+.product-card-main-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-card-price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-card-main-img {
+}
+
+.product-card-main button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 15px 25px;
+  background-color: rgb(255, 88, 88);
+  color: white;
+}

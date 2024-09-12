@@ -29,7 +29,7 @@ export const ProductReducer = (
 ) => {
   switch (action.type) {
     case 'SET_PRODUCTS':
-        console.log("all products", action.products);
+      console.log('all products', action.products);
       return action.products;
     default:
       return state;
@@ -61,27 +61,18 @@ export const getProductsTC = () => {
 };
 
 export const mapProductFromApi = (apiProduct: any): ProductType => {
-    let parsedDescription;
-    
-    try {
-      parsedDescription = JSON.parse(apiProduct.description.replace(/'/g, '"'));
-    } catch (error) {
-      console.error('Error parsing description:', error);
-      parsedDescription = apiProduct.description; 
-    }
-  
-    return {
-      product_id: apiProduct.product_id,
-      title: apiProduct.title,
-      category: apiProduct.category,
-      photo_preview_one: apiProduct.photo_preview_one,
-      photo_preview_two: apiProduct.photo_preview_two,
-      photo_preview_three: apiProduct.photo_preview_three,
-      photo_preview_four: apiProduct.photo_preview_four,
-      description: parsedDescription, 
-      isSale: apiProduct.isSale,
-      downloads: apiProduct.downloads,
-      create_at: new Date(apiProduct.create_at).toISOString(),
-      price: apiProduct.price,
-    };
+  return {
+    product_id: apiProduct.product_id,
+    title: apiProduct.title,
+    category: apiProduct.category,
+    photo_preview_one: apiProduct.photo_preview_one,
+    photo_preview_two: apiProduct.photo_preview_two,
+    photo_preview_three: apiProduct.photo_preview_three,
+    photo_preview_four: apiProduct.photo_preview_four,
+    description: apiProduct.description,
+    isSale: apiProduct.isSale,
+    downloads: apiProduct.downloads,
+    create_at: new Date(apiProduct.create_at).toISOString(),
+    price: apiProduct.price,
   };
+};

@@ -3,12 +3,14 @@ import ClientForm from '../../components/client-form/ClientForm';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import LogoList from '../../components/logo-list/LogoList';
-import './product-card.css';
+import ProductCard from '../../components/product-card/ProductCard';
+import './product-card-page.css';
 
-const ProductCard = () => {
+const ProductCardPage = () => {
   return (
-    <div className="product-card">
+    <div className="product-card-page">
       <Header />
+      <ProductCard />
       <LogoList />
       <ClientForm />
       <Footer />
@@ -16,4 +18,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default ProductCardPage;

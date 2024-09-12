@@ -3,6 +3,7 @@ import { ProductType } from "../../state/product-reducer"
 import { LogoType } from "../logo-list/LogoList"
 import "./logo-item.css"
 
+
 type LogoItemPropsType = {
     logoItem: ProductType
 }
@@ -15,7 +16,7 @@ const LogoItem = (props: LogoItemPropsType) => {
   };
   return (
     <div className="logo-item">
-        <img src={`https://novanest.webshop2.kz/api/images/${props.logoItem.photo_preview_one}`} alt="" />
+        <img src={`https://novanest.webshop2.kz/api/products/previewImage/${props.logoItem.photo_preview_one}`} alt="" />
         <div className="logo-item-info">
             <p className="logo-item-name">{props.logoItem.title}</p>
             <p className="logo-item-category">{props.logoItem.category}</p>

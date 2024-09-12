@@ -5,7 +5,7 @@ import AboutUsPage from "./pages/about-us-page/AboutUs"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { getProductsTC } from "./state/product-reducer"
-import ProductCard from "./pages/product-card/ProductCard"
+import ProductCard from "./pages/product-card-page/ProductCardPage"
 
 const App = () => {
   const dispatch = useDispatch<any>();
