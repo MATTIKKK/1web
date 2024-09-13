@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { getProductsTC } from "./state/product-reducer"
 import ProductCard from "./pages/product-card-page/ProductCardPage"
+import CategoryPage from "./pages/category-page/CategoryPage"
 
 const App = () => {
   const dispatch = useDispatch<any>();
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/product-card/:id" element={<ProductCard />} />
+            <Route path="/categories/" element={<CategoryPage />} />
 
         </Routes>
     </BrowserRouter>

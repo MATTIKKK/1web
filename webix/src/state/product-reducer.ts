@@ -14,6 +14,7 @@ export type ProductType = {
   downloads: number;
   create_at: string;
   price: string;
+  sale_percent: string | null;
 };
 
 export type SetProductsActionType = {
@@ -74,5 +75,6 @@ export const mapProductFromApi = (apiProduct: any): ProductType => {
     downloads: apiProduct.downloads,
     create_at: new Date(apiProduct.create_at).toISOString(),
     price: apiProduct.price,
+    sale_percent: apiProduct.sale_percent,
   };
 };

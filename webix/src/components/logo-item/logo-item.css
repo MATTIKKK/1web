@@ -32,9 +32,18 @@
 }
 
 .logo-item-price {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     margin-top: 15px;
+}
+
+.logo-item-price span{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 5px;
+    text-decoration: line-through;
+    color: gray;
 }
 
 .logo-item button {
@@ -48,4 +57,13 @@
 
 .logo-item button:hover {
     background-color: rgb(230, 66, 66);
+}
+
+.sale-info {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    font-size: 13px;
 }
