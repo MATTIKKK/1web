@@ -1,7 +1,9 @@
 import "./main-banner.css"
 import logo from "../../static/images/logo4.png"
+import { useNavigate } from "react-router-dom"
 
 const MainBanner = () => {
+  const navigate = useNavigate();
   return (
     <div className="main-banner">
         <div className="container">
@@ -9,7 +11,7 @@ const MainBanner = () => {
                 <div className="main-banner-slide">
                     <p className="main-banner-title">Создай стильный бренд с логотипами для индустрии моды</p>
                     <p className="main-banner-text">Выбирай из трендовых и элегантных логотипов, созданных для того, чтобы выделить твой бренд в мире моды. Подчеркни свою уникальность с помощью изысканного дизайна</p>
-                    <button>Найти свой стиль</button>
+                    <button onClick={() => navigate("/categories")}>Найти свой стиль</button>
                 </div>
                 <img src={logo} alt="" />
             </div>

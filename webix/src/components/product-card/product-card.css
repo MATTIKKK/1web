@@ -18,6 +18,10 @@
   width: 100px;
 }
 
+.product-card-img-list img{
+  cursor: pointer;
+}
+
 .product-card-main {
   max-width: 450px;
   display: flex;
@@ -28,7 +32,7 @@
 .product-card-info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     font-family: "Inter";
 }
 
@@ -54,6 +58,7 @@
 .product-card-main-img img {
   max-width: 500px;
   width: 100%;
+  cursor: pointer;
 }
 
 .product-card-main button {

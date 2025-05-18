@@ -45,6 +45,7 @@
   font-size: 11px;
   line-height: 22px;
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
 }
 
 .footer_social-media-img {
@@ -54,6 +55,7 @@
 
 .footer_social-media-img img {
   width: 30px;
+  cursor: pointer;
 }
 
 .footer-block a {

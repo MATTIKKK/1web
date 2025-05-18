@@ -4,6 +4,7 @@ import { RootState } from '../../state/store';
 import { ProductType } from '../../state/product-reducer';
 import LogoItem from '../logo-item/LogoItem';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 enum FilterCategory {
   POPULARITY = 'popularity',
@@ -42,6 +43,7 @@ const ProductList = () => {
   const [selectedCategory, setSelectedCategory] = useState<FilterCategory>(
     FilterCategory.POPULARITY
   );
+  const { category } = useParams<{ category: string }>();
 
   const products = useSelector<RootState, ProductType[]>(
     (state) => state.products

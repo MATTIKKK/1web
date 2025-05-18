@@ -52,7 +52,10 @@ export const getProductsTC = () => {
       const response = await axios.get('/api/products/products');
       console.log('getProducts response: ', response.data);
       const products = response.data.products.map((product: any) => {
-        return mapProductFromApi(product);
+        
+        const newProduct = mapProductFromApi(product);
+        console.log("new product", product);
+        return newProduct;
       });
       dispatch(setProductsAC(products));
     } catch (error) {

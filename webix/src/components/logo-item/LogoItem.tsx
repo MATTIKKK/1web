@@ -11,7 +11,7 @@ const LogoItem = (props: LogoItemPropsType) => {
   const navigate = useNavigate();
 
   const handleBuyClick = () => {
-    navigate(`/product-card/${props.logoItem.product_id}`);
+    window.location.href = `/product-card/${props.logoItem.product_id}`;
   };
   return (
     <div className="logo-item">

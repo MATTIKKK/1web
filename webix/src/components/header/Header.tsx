@@ -4,6 +4,7 @@ import telegram from '../../static/images/telegram-logo.png';
 import instagram from '../../static/images/instagram-logo.png';
 import whatsapp from '../../static/images/whatsapp-logo.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -12,6 +13,16 @@ const Header = () => {
     setIsActive(prev => !prev);
   };
 
+  const categoryMap = {
+    Корпоративный: 'Корпоративные логотипы',
+    Технологии: 'Технологические логотипы',
+    Мода: 'Логотипы про моду',
+    Еда: 'Логотипы про еду',
+    Спорт: 'Спортивные логотипы',
+    Креатив: 'Креативные логотипы',
+  };
+  
+
   return (
     <header className="header">
       <div className="container">
@@ -19,24 +30,11 @@ const Header = () => {
           <a href="/"><img src={logo} alt="logo" className="logo" /></a>
 
           <ul className="menu-list">
-            <li>
-              <a href="#">Корпоративный</a>
-            </li>
-            <li>
-              <a href="#">Технологии</a>
-            </li>
-            <li>
-              <a href="#">Мода</a>
-            </li>
-            <li>
-              <a href="#">Еда</a>
-            </li>
-            <li>
-              <a href="#">Спорт</a>
-            </li>
-            <li>
-              <a href="#">Креатив</a>
-            </li>
+          {Object.entries(categoryMap).map(([russian, type], index) => (
+              <li key={index}>
+                <Link to={`/categories/${type}`}>{russian}</Link>
+              </li>
+            ))}
           </ul>
 
           <div className="menu-about-us">
@@ -56,7 +54,7 @@ const Header = () => {
           </div>
 
           <div className="menu-nav-info">
-          <img src={logo} alt="logo" className="logo-mobile" />
+          <a href="/"><img src={logo} alt="logo" className="logo-mobile" /></a>
           <p className='menu-phone-number'>+7 (727) 345-6789</p>
           </div>
           
@@ -64,24 +62,11 @@ const Header = () => {
             id="menu-list"
             className={isActive ? "menu-list active" : "menu-list"}
           >
-            <li>
-              <a href="#">Финансы</a>
-            </li>
-            <li>
-              <a href="#">Утилиты</a>
-            </li>
-            <li>
-              <a href="#">Здоровье</a>
-            </li>
-            <li>
-              <a href="#">Игры</a>
-            </li>
-            <li>
-              <a href="#">Социальные сети</a>
-            </li>
-            <li>
-              <a href="#">Путешествия</a>
-            </li>
+            {Object.entries(categoryMap).map(([russian, english], index) => (
+              <li key={index}>
+                <Link to={`/categories/${english}`}>{russian}</Link>
+              </li>
+            ))}
 
             <div className="menu-more-info">
             <div className="social-media-img">
